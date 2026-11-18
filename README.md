@@ -2,11 +2,15 @@
 
 A classic retro Pong game built in Python using the `turtle` graphics library and Object-Oriented Programming (OOP) principles.
 
+---
+
 ## 🚀 Features
-* **Two-Player Support:** Play locally with a friend (Left paddle: `W` / `S`, Right paddle: `Up` / `Down` arrow keys).
-* **Dynamic Ball Physics:** The ball bounces off top/bottom walls and increases speed as it successfully hits paddles.
-* **Scoreboard System:** Real-time score tracking for both players with clean on-screen rendering.
-* **OOP Architecture:** Clean, modular codebase separated into specialized classes for the Ball, Paddles, and Scoreboard.
+
+* **Two-Player Local Multiplayer:** Play head-to-head with a friend on the same keyboard.
+* **Dynamic Ball Physics:** The ball bounces off the top/bottom boundaries and deflects off paddles upon successful collision.
+* **Progressive Difficulty:** The ball's speed gradually increases with each successful paddle hit (`x -= 0.0001`).
+* **Real-Time Scoreboard:** Tracks and updates scores dynamically for both players whenever a point is scored[cite: 4, 6].
+* **Modular OOP Architecture:** Clean separation of concerns with dedicated classes for the ball, paddles, and scoreboard[cite: 4, 5, 6, 7].
 
 ---
 
@@ -14,6 +18,6 @@ A classic retro Pong game built in Python using the `turtle` graphics library an
 
 ```text
 ├── main.py          # Main game loop, window setup, and collision handling
-├── paddle.py        # Paddle class controlling movement and positioning
-├── ball.py          # Ball class handling movement, speed, and bounces
-└── score_board.py   # Scoreboard class managing scores and text rendering
+├── ball.py          # Ball class managing movement, bounces, and resets
+├── paddle.py        # Paddle class controlling position and vertical movement
+└── score_board.py   # Scoreboard class handling score tracking and text rendering
